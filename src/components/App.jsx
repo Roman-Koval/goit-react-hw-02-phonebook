@@ -31,9 +31,9 @@ class App extends Component {
     });
   };
 
-  removeContact = (name) => {
+  removeContact = (id) => {
     this.setState((prevState) => ({
-      contacts: prevState.contacts.filter((pers) => pers.name !== name),
+      contacts: prevState.contacts.filter((pers) => pers.id !== id),
     }));
   };
 

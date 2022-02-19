@@ -8,9 +8,7 @@ class ContactItem extends Component {
       <li>
         <span>{`${this.props.name}:`}</span>
         <span>{this.props.number}</span>
-        <button
-          type="submit"
-          onClick={() => this.props.onDeleteNumber(this.props.name)}
+        <button type="submit" onClick={() => this.props.onDeleteNumber(this.props.id)}
         >
           Delete
         </button>

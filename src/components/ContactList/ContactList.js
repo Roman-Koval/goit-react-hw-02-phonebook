@@ -14,6 +14,7 @@ class ContactList extends Component {
               <ContactItem
                 name={contact.name}
                 number={contact.number}
+                id={contact.id}
                 onDeleteNumber={this.props.onDeleteContact}
               />
             </Fragment>
